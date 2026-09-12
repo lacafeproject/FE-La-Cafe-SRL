@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Café — Hot Coffee, Hotter Gossip</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Pacifico&display=swap');
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',sans-serif;background:#fffaf9;color:#4b2525}
+nav{position:sticky;top:0;z-index:10;background:rgba(255,250,249,.94);backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:14px 7%;border-bottom:1px solid #f2d4d7}
+.brand{font-family:Pacifico,cursive;font-size:28px;color:#6a292d}.brand span{color:#d97c91}
+nav a{color:#5b3031;text-decoration:none;margin-left:22px;font-weight:600;font-size:14px}
+.hero{min-height:78vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:40px;padding:55px 8%;background:radial-gradient(circle at 80% 20%,#ffe3e8,transparent 35%),linear-gradient(135deg,#fffaf9,#fff0f2)}
+.hero img{width:min(520px,100%);display:block;margin:auto;border-radius:28px;box-shadow:0 22px 55px #b96b7630}
+.eyebrow{letter-spacing:3px;text-transform:uppercase;color:#bd6578;font-weight:700;font-size:13px}
+.hero h1{font-family:Pacifico,cursive;font-size:clamp(55px,8vw,95px);line-height:1;margin:12px 0;color:#6a292d}.hero h1 span{color:#d97c91}
+.tag{font-size:22px;margin:18px 0;color:#6d4545}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:14px 22px;border-radius:999px;text-decoration:none;font-weight:700}.primary{background:#d9798e;color:white}.secondary{border:2px solid #d9798e;color:#a84f64;background:white}
+.section{padding:75px 8%}.section h2{text-align:center;font-family:Pacifico,cursive;font-size:45px;color:#6a292d;margin:0 0 12px}.sub{text-align:center;color:#8a6666;margin-bottom:38px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #f0d9dc;border-radius:24px;padding:26px;box-shadow:0 12px 35px #9f5b6520}
+.icon{font-size:38px}.card h3{margin:12px 0 8px}.price{font-weight:800;color:#c25f76}
+.promo{background:#f9d8df;border-radius:32px;padding:42px;display:flex;justify-content:space-between;align-items:center;gap:25px}.promo h2{text-align:left;margin:0;font-size:38px}
+.badge{background:white;border-radius:18px;padding:18px 25px;font-weight:800;color:#b04f67;white-space:nowrap}.about{max-width:800px;margin:auto;text-align:center;font-size:18px;line-height:1.8}
+.footer{padding:35px 8%;text-align:center;background:#6a292d;color:white}.footer b{font-family:Pacifico,cursive;font-size:25px}.gossip{color:#ffd5dd}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.hero img{max-width:390px}.cards{grid-template-columns:1fr}.promo{display:block;text-align:center}.promo h2{text-align:center}.badge{display:inline-block;margin-top:20px}nav{flex-direction:column;gap:10px}nav a{margin:0 7px}}
+</style>
+</head>
+<body>
+<nav><div class="brand">La <span>Café</span> ☕</div><div><a href="#meniu">Meniu</a><a href="#promo">Promoții</a><a href="#noi">Despre noi</a><a href="#contact">Contact</a></div></nav>
+<section class="hero"><div><div class="eyebrow">Bine ai venit la</div><h1>La <span>Café</span></h1><div class="tag">Hot Coffee, Hotter Gossip 💋</div><p>Un loc mic, cozy și roz, cu cafea bună și povești și mai bune.</p><div class="buttons"><a class="btn primary" href="#meniu">☕ Vezi meniul</a><a class="btn secondary" href="#promo">🎀 Vezi promoțiile</a></div></div><img src="logo.jpg" alt="Logo La Café"></section>
+<section class="section" id="meniu"><h2>Meniul nostru ☕</h2><p class="sub">Alege-ți preferata și vino la o cafea + puțin gossip.</p><div class="cards">
+<div class="card"><div class="icon">☕</div><h3>Espresso</h3><p>Mic, intens și perfect pentru o pauză rapidă.</p><div class="price">7 lei</div></div>
+<div class="card"><div class="icon">🥛</div><h3>Cappuccino</h3><p>Cremă de lapte, cafea și un vibe cozy.</p><div class="price">10 lei</div></div>
+<div class="card"><div class="icon">☕</div><h3>Americano</h3><p>Clasic, aromat și perfect pentru orice moment.</p><div class="price">8 lei</div></div>
+<div class="card"><div class="icon">🍫</div><h3>Ciocolată caldă</h3><p>Dulce, caldă și exact ce trebuie într-o zi rece.</p><div class="price">6 lei</div></div>
+<div class="card"><div class="icon">🫖</div><h3>Ceai</h3><p>O alegere caldă, cozy și liniștitoare.</p><div class="price">8 lei</div></div>
+<div class="card"><div class="icon">🥛</div><h3>Latte</h3><p>Fin, cremos și perfect pentru o pauză relaxantă.</p><div class="price">12 lei</div></div>
+<div class="card"><div class="icon">💗</div><h3>Pink Latte</h3><p>Roz, cute și făcut pentru un moment special.</p><div class="price">14 lei</div></div>
+<div class="card"><div class="icon">🍯</div><h3>Honey Latte</h3><p>Cremos și dulce, cu o notă delicată de miere.</p><div class="price">13 lei</div></div>
+<div class="card"><div class="icon">🎀</div><h3>Vanilla Kiss</h3><p>Un latte delicat cu un vibe dulce și cozy.</p><div class="price">15 lei</div></div>
+<div class="card"><div class="icon">🍮</div><h3>Caramel Gossip</h3><p>Dulce, cremos și perfect pentru un gossip bun.</p><div class="price">15 lei</div></div>
+</div></section>
+<section class="section" id="promo"><div class="promo"><div><h2>🎀 Promoția zilei</h2><p>Ia două băuturi și primești un mic extra dulce din partea noastră.</p></div><div class="badge">HOT DEAL 💕</div></div></section>
+<section class="section" id="noi"><h2>Despre La Café</h2><p class="about">La Café este cafeneaua noastră de proiect: un colț pastel, vesel și cozy, creat pentru cafea, râsete și conversații. Pentru că uneori o cafea bună vine cu… un gossip și mai bun. 🤭</p></section>
+<section class="section" id="contact"><h2>Ne găsești aici 💌</h2><p class="sub">📍 Standul La Café • 📸 Instagram: @lacafe • 💬 „Pssst… vii la o cafea?”</p></section>
+<footer class="footer"><b>La Café</b><br><span class="gossip">Hot Coffee, Hotter Gossip</span><br><small>© 2026 La Café — School Café Project</small></footer>
+</body></html>
